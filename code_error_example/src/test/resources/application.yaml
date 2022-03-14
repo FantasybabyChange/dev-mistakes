@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: dev_error_example
+server:
+  port: 7777
+logging:
+  config: classpath:log4j2_bak.xml

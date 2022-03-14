@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: dev_error
+  datasource:
+    url: jdbc:mysql://192.168.3.12:3306/fantasybaby_dev_error?characterEncoding=UTF-8&useSSL=false&rewriteBatchedStatements=true
+    #    url: jdbc:mysql://10.86.36.26:3306/fantasybaby_dev_error?characterEncoding=UTF-8&useSSL=false&rewriteBatchedStatements=true
+    username: root
+    password: root123
+    platform: mysql
+    maximum-pool-size: 100
+    jpa:
+      open-in-view: false
+      hibernate:
+        naming:
+          physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+
+ribbon:
+  ReadTimeout: 4000
+  ConnectTimeout: 4000
+server:
+  port: 7888
+  servlet:
+    encoding:
+      force: true
+      charset: UTF-8
+logging:
+  config: classpath:logback-spring.xml
+#  spring:
+#    autoconfigure:
+#      exclude:
+#        - "org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration"
+#        - "org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration"
+#        - "org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration"
+#        - "org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration"
