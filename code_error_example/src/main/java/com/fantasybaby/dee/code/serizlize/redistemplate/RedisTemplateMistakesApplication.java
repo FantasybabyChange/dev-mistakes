@@ -4,17 +4,20 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.RedisSerializer;
 
-@SpringBootApplication
-public class CommonMistakesApplication {
+@SpringBootApplication(scanBasePackages = "com.fantasybaby.dee.code.serizlize.redistemplate"
+        , exclude = {DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class})
+public class RedisTemplateMistakesApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CommonMistakesApplication.class, args);
+        SpringApplication.run(RedisTemplateMistakesApplication.class, args);
     }
 
     @Bean
