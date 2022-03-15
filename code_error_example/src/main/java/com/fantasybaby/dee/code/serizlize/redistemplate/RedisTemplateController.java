@@ -11,21 +11,22 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.PostConstruct;
+import javax.annotation.Resource;
 
 @RestController
 @RequestMapping("redistemplate")
 @Slf4j
 public class RedisTemplateController {
 
-    @Autowired
+    @Resource
     private RedisTemplate redisTemplate;
-    @Autowired
+    @Resource
     private StringRedisTemplate stringRedisTemplate;
     @Autowired
     private ObjectMapper objectMapper;
-    @Autowired
+    @Resource
     private RedisTemplate<String, User> userRedisTemplate;
-    @Autowired
+    @Resource
     private RedisTemplate<String, Long> countRedisTemplate;
 
 
