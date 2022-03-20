@@ -1,15 +1,20 @@
 package com.fantasybaby.dee.code.datetime.mysql;
 
 import lombok.extern.slf4j.Slf4j;
+import org.redisson.spring.starter.RedissonAutoConfiguration;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
 
 import java.util.TimeZone;
 
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.fantasybaby.dee.code.datetime.mysql"
+        , exclude = { RedissonAutoConfiguration.class, RedisAutoConfiguration.class})
 @Slf4j
 public class CommonMistakesApplication implements CommandLineRunner {
 

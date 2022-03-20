@@ -41,3 +41,4 @@ application-dev-local.yml
 */*client/src/main/generated-sources/
 **/logs/*
 **/.mvn/*
+*.log
