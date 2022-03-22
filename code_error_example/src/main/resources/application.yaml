@@ -2,7 +2,7 @@ spring:
   application:
     name: dev_error
   datasource:
-    url: jdbc:mysql://192.168.3.12:3306/fantasybaby_dev_error?characterEncoding=UTF-8&useSSL=false&rewriteBatchedStatements=true
+    url: jdbc:mysql://192.168.83.128/fantasybaby_dev_error?characterEncoding=UTF-8&useSSL=false&rewriteBatchedStatements=true
     #    url: jdbc:mysql://10.86.36.26:3306/fantasybaby_dev_error?characterEncoding=UTF-8&useSSL=false&rewriteBatchedStatements=true
     username: root
     password: root123

@@ -22,11 +22,11 @@ public class UsernameAutoCompleteService {
     @Autowired
     private UserRepository userRepository;
 
-    @PostConstruct
+//    @PostConstruct
     public void wrong() {
         userRepository.saveAll(LongStream.rangeClosed(1, 10000).mapToObj(i -> new UserEntity(i, randomName())).collect(Collectors.toList()));
 
-        userRepository.findAll().forEach(userEntity -> {
+         userRepository.findAll().forEach(userEntity -> {
             int len = userEntity.getName().length();
             for (int i = 0; i < len; i++) {
                 String key = userEntity.getName().substring(0, i + 1);
@@ -38,9 +38,9 @@ public class UsernameAutoCompleteService {
                 autoCompleteIndex.entrySet().stream().map(item -> item.getValue().size()).reduce(0, Integer::sum));
     }
 
-    //@PostConstruct
+    @PostConstruct
     public void right() {
-        userRepository.saveAll(LongStream.rangeClosed(1, 10000).mapToObj(i -> new UserEntity(i, randomName())).collect(Collectors.toList()));
+//        userRepository.saveAll(LongStream.rangeClosed(1, 10000).mapToObj(i -> new UserEntity(i, randomName())).collect(Collectors.toList()));
 
         HashSet<UserDTO> cache = userRepository.findAll().stream()
                 .map(item -> new UserDTO(item.getName()))
