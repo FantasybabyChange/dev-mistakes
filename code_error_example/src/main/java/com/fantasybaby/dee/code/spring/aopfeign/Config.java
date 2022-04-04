@@ -4,6 +4,6 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@EnableFeignClients(basePackages = "org.geekbang.time.commonmistakes.springpart2.aopfeign.feign")
+@EnableFeignClients(basePackages = "com.fantasybaby.dee.code.spring.aopfeign")
 public class Config {
 }

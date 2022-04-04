@@ -7,4 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public interface Client {
     @GetMapping("/feignaop/server")
     String api();
+
+    @GetMapping("/feignaop/server1")
+    String api2();
 }

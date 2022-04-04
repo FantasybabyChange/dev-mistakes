@@ -27,6 +27,10 @@ public class FeignAopConntroller {
     public String client() {
         return client.api();
     }
+    @GetMapping("client1")
+    public String client1() {
+        return client.api2();
+    }
 
     @GetMapping("clientWithUrl")
     public String clientWithUrl() {
@@ -36,5 +40,9 @@ public class FeignAopConntroller {
     @GetMapping("server")
     public String server() {
         return "OK";
+    }
+    @GetMapping("server1")
+    public String server1() {
+        return "hehe";
     }
 }
