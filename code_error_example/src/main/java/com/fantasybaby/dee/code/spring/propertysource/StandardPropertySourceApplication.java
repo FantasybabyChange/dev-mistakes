@@ -26,7 +26,6 @@ public class StandardPropertySourceApplication {
         //环境变量添加 MANAGEMENT_SERVER_PORT=12345 MANAGEMENT_SERVER_IP=192.168.0.2
         new SpringApplicationBuilder(StandardPropertySourceApplication.class)
                 // .REACTIVE, .SERVLET
-                .web(WebApplicationType.NONE)
                 .bannerMode(Banner.Mode.OFF)
                 .run(args);
     }
@@ -44,6 +43,7 @@ public class StandardPropertySourceApplication {
 
         System.out.println("配置优先级：");
         env.getPropertySources().stream().forEach(System.out::println);
+        System.out.println("结束配置优先级：");
     }
 }
 
