@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: dev_error_design
+server:
+  port: 7778
+  servlet:
+    encoding:
+      force: true
+      charset: UTF-8
+logging:
+  config: classpath:logback-spring.xml
