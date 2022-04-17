@@ -1,6 +1,6 @@
 package com.fantasybaby.dee.code.serizlize.enumusedinapi;
 
-import com.fantasybaby.dee.common.Utils;
+import com.fantasybaby.dev.mistake.common.Utils;
 import com.fasterxml.jackson.databind.Module;
 import com.fasterxml.jackson.databind.module.SimpleModule;
 import org.springframework.boot.SpringApplication;

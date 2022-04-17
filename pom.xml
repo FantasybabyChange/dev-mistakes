@@ -23,6 +23,7 @@
                 <spring.cloud-version>Hoxton.SR8</spring.cloud-version>
     </properties>
     <modules>
+        <module>dev-mistakes-common</module>
         <module>dev_design_example</module>
         <module>code_error_example</module>
       
@@ -58,6 +59,7 @@
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
         </dependency>
+
     </dependencies>
     <dependencyManagement>
         <dependencies>
@@ -106,6 +108,11 @@
                 <artifactId>groovy-all</artifactId>
                 <version>4.0.0</version>
                 <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>com.fantasybaby.dev.error</groupId>
+                <artifactId>dev-mistakes-common</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

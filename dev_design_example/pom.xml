@@ -17,8 +17,23 @@
     <artifactId>fluent-hc</artifactId>
     <version>4.5.12</version>
   </dependency>
+  <dependency>
+    <groupId>com.fantasybaby.dev.error</groupId>
+    <artifactId>dev-mistakes-common</artifactId>
+  </dependency>
 </dependencies>
   <build>
+    <resources>
+      <resource>
+        <directory>src/main/java</directory>
+        <includes>
+          <include>**/*.properties</include>
+          <include>**/*.xml</include>
+          <include>**/*.txt</include>
+        </includes>
+        <filtering>false</filtering>
+      </resource>
+    </resources>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -31,4 +46,5 @@
       </plugin>
     </plugins>
   </build>
+
 </project>

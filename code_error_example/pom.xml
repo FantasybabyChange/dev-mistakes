@@ -73,6 +73,10 @@
             <artifactId>groovy-all</artifactId>
             <type>pom</type>
         </dependency>
+        <dependency>
+            <groupId>com.fantasybaby.dev.error</groupId>
+            <artifactId>dev-mistakes-common</artifactId>
+        </dependency>
     </dependencies>
 <build>
     <resources>

@@ -1,6 +1,6 @@
 package com.fantasybaby.dee.code.serizlize.jsonignoreproperties;
 
-import com.fantasybaby.dee.common.Utils;
+import com.fantasybaby.dev.mistake.common.Utils;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import org.redisson.spring.starter.RedissonAutoConfiguration;

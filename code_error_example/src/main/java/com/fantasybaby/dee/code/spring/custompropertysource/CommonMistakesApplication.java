@@ -1,6 +1,6 @@
 package com.fantasybaby.dee.code.spring.custompropertysource;
 
-import com.fantasybaby.dee.common.Utils;
+import com.fantasybaby.dev.mistake.common.Utils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;

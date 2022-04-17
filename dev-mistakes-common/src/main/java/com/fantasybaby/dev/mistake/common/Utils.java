@@ -1,4 +1,4 @@
-package com.fantasybaby.dee.common;
+package com.fantasybaby.dev.mistake.common;
 
 import lombok.extern.slf4j.Slf4j;
 
