@@ -21,6 +21,10 @@
     <groupId>com.fantasybaby.dev.error</groupId>
     <artifactId>dev-mistakes-common</artifactId>
   </dependency>
+  <dependency>
+    <groupId>org.redisson</groupId>
+    <artifactId>redisson-spring-boot-starter</artifactId>
+  </dependency>
 </dependencies>
   <build>
     <resources>
