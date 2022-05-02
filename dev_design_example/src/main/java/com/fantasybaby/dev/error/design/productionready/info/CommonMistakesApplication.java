@@ -1,6 +1,6 @@
 package com.fantasybaby.dev.error.design.productionready.info;
 
-import org.geekbang.time.commonmistakes.common.Utils;
+import com.fantasybaby.dev.mistake.common.Utils;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;

@@ -19,7 +19,7 @@ public class UserServiceHealthIndicator implements HealthIndicator {
         long userId = 1L;
         User user = null;
         try {
-            user = restTemplate.getForObject("http://localhost:45678/user?userId=" + userId, User.class);
+            user = restTemplate.getForObject("http://localhost:7778/user?userId=" + userId, User.class);
             if (user != null && user.getUserId() == userId) {
                 return Health.up()
                         .withDetail("user", user)
