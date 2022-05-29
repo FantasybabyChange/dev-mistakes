@@ -17,9 +17,9 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.UUID;
 
 @Slf4j
-@Configuration
-@RestController
-@RequestMapping("fanoutright")
+//@Configuration
+//@RestController
+//@RequestMapping("fanoutright")
 public class FanoutQueueRight {
     private static final String MEMBER_QUEUE = "newusermember";
     private static final String PROMOTION_QUEUE = "newuserpromotion";

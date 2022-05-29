@@ -1,6 +1,7 @@
 package com.fantasybaby.dev.error.design.asyncprocess.deadletter;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.amqp.AmqpRejectAndDontRequeueException;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
@@ -12,7 +13,7 @@ public class MQListener {
         //http://localhost:15672/#/
         log.info("got message {}", data);
         throw new NullPointerException("error");
-        //throw new AmqpRejectAndDontRequeueException("error");
+//        throw new AmqpRejectAndDontRequeueException("error");
     }
 
     @RabbitListener(queues = Consts.DEAD_QUEUE)

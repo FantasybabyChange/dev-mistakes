@@ -18,7 +18,7 @@ public class UserService {
 
     public List<User> getUsersAfterIdWithLimit(long id, int limit) {
         return users.stream()
-                .filter(user -> user.getId() >= id)
+                .filter(user -> user.getId() > id)
                 .limit(limit)
                 .collect(Collectors.toList());
     }
