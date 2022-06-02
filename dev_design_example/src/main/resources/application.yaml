@@ -1,6 +1,17 @@
 spring:
   application:
     name: dev_error_design
+  datasource:
+    url: jdbc:mysql://192.168.3.12/fantasybaby_dev_error?characterEncoding=UTF-8&useSSL=false&rewriteBatchedStatements=true
+    #    url: jdbc:mysql://10.86.36.26:3306/fantasybaby_dev_error?characterEncoding=UTF-8&useSSL=false&rewriteBatchedStatements=true
+    username: root
+    password: root123
+    maximum-pool-size: 100
+    jpa:
+      open-in-view: false
+      hibernate:
+        naming:
+          physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
   redis:
     host: 192.168.3.12
   rabbitmq:
