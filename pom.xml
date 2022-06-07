@@ -26,6 +26,7 @@
         <module>dev-mistakes-common</module>
         <module>dev_design_example</module>
         <module>code_error_example</module>
+        <module>dev_design_security</module>
       
     </modules>
     <dependencies>

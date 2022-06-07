@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: dev_security
+server:
+  port: 7779
+  servlet:
+    encoding:
+      force: true
+      charset: UTF-8
+
+logging:
+  config: classpath:logback-spring.xml
