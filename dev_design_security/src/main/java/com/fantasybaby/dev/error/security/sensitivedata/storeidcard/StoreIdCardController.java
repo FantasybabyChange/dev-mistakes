@@ -81,8 +81,8 @@ public class StoreIdCardController {
     }
 
     @GetMapping("right")
-    public UserData right(@RequestParam(value = "name", defaultValue = "朱晔") String name,
-                          @RequestParam(value = "idcard", defaultValue = "300000000000001234") String idCard,
+    public UserData right(@RequestParam(value = "name", defaultValue = "fantasybaby") String name,
+                          @RequestParam(value = "idcard", defaultValue = "1444442222211") String idCard,
                           @RequestParam(value = "aad", required = false) String aad) throws Exception {
         UserData userData = new UserData();
         userData.setId(1L);

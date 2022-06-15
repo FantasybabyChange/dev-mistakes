@@ -7,11 +7,15 @@ spring:
     username: root
     password: root123
     maximum-pool-size: 100
-    jpa:
-      open-in-view: false
-      hibernate:
-        naming:
-          physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  jpa:
+    open-in-view: false
+    hibernate:
+      hbm2ddl:
+        auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      ddl-auto: create
+    database: mysql
 server:
   port: 7779
   servlet:
